@@ -1,6 +1,5 @@
 #First-price sealed-bid auction
 import art
-import operator
 import os
 print(art.logo)
 biddings = {}
