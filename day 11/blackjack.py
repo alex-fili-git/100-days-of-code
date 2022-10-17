@@ -10,8 +10,6 @@
 ## The cards in the list have equal probability of being drawn.
 ## Cards are not removed from the deck as they are drawn.
 ## The computer is the dealer.
-
-from tkinter import Y
 import art
 import os
 import random
