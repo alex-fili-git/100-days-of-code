@@ -41,3 +41,26 @@ nested dict
 travel_log = {
     "France": {"cities visited": "Paris", "cities to visit": ["lille", "dijon"]}
 }
+
+nesting a dictionary in a list
+[{
+    key:[list],
+    key2:{dict}
+}
+{
+    key: value,
+    key2: value2
+}]
+
+travel_log = [
+    {
+        "country": "france", 
+        "cities_visited": ["Paris", "Lille", "Dijon"], 
+        "total_visits": 12
+    },
+    {
+        "country": "germany", 
+        "cities_visited": ["Berlin", "Stuttgart"], 
+        "total_visits": 5
+    }
+]
