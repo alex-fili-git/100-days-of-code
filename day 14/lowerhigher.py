@@ -3,9 +3,9 @@ import game_data
 import random
 
 score = 0
-
-def draw():
-    random.choice(game_data.data)
+print(game_data.data)
+#def draw():
+#    random.choice(game_data.data)
 
 
 print(art.logo)
