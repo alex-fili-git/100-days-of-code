@@ -49,12 +49,17 @@ def is_sufficient(choice):
         return False
     return True
 
-def change(q, d, n, p, cost):
+def process_coins(cost):
     """Returns change if enough money was inserted, else False."""
-    paid = q*0.25+d*0.1+0.05*n+0.01*p
+    print("Please insert coins.")
+    quarters = int(input("how many quarters?: "))
+    dimes = int(input("how many dimes?: "))
+    nickles = int(input("how many nickles?: "))
+    pennies = int(input("how many pennies?: "))
+    paid = quarters*0.25+dimes*0.1+0.05*nickles+0.01*pennies
     if paid > cost:
         global money 
-        money += round(paid - cost, 2)
+        money += cost
         return round(paid - cost, 2)
     print("Sorry that's not enough money. Money refunded.")
     return False
@@ -82,11 +87,8 @@ while is_on:
     else:
         if is_sufficient(order):
             price = MENU[order]["cost"]
-            print("Please insert coins.")
-            quarters = int(input("how many quarters?: "))
-            dimes = int(input("how many dimes?: "))
-            nickles = int(input("how many nickles?: "))
-            pennies = int(input("how many pennies?: "))
-            if change(quarters, dimes, nickles, pennies, price):
+            
+            fix = process_coins(price)
+            if fix:
                 update_resources(order)
-                print(f'Here is ${"{:.2f}".format(change(quarters, dimes, nickles, pennies, price))} in change.\n Here is your {order}. Enjoy!')
+                print(f'Here is ${"{:.2f}".format(fix)} in change.\n Here is your {order}. Enjoy!')
