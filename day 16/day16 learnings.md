@@ -14,3 +14,7 @@ an object is created from a class, can generate multiple objects, as many as we 
 car = CarBlueprint() -> 'CarBlueprint' class, car is name for the object
 car.speed from car get the speed attribute from object car
 car.stop() run method on object
+
+Use packages for ease of use for instance for ascII.
+
+In order to use packages you first have to install them.
