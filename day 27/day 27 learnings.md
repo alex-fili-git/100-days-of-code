@@ -3,6 +3,12 @@ Create a pop-up for running the program such that it is easy to interpret.
 mainloop has always to be at the bottom to keep window running.
 With tkinter you first have to create a variable and then specify how it will be displayed.
 
+## placing elements
+pack() automatically places
+place() sets it to specific coordinates
+grid() it imagines the whole programme as a grid with rows and columns.
+cannot mix the grid and pack/place methods.
+with padx and pady you can create some space around the components.
 
 # function arguments
 Default arguments and *Args and **Kwargs this comes down to advanced arguments.
@@ -18,3 +24,4 @@ def add(*args):
 
 ## **kwargs
 Creates a dictionary.
+
