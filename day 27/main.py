@@ -2,8 +2,7 @@ from tkinter import *
 
 window = Tk()
 window.title("Mile to Km converter")
-window.minsize(width=400, height=100)
-window.config(padx=30, pady=30)
+window.config(padx=20, pady=20)
 
 miles_input = Entry(width=10)
 miles_input.insert(END, string=0)
@@ -20,6 +19,8 @@ km_label.grid(column=2, row=1)
 
 def button_clicked():
     output_label.config(text=round(int(miles_input.get())*1.609344))
+
+
 calculate = Button(text="Calculate", command=button_clicked)
 calculate.grid(column=1, row=2)
 
