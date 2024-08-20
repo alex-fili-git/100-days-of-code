@@ -13,8 +13,8 @@ for index, person in birthdays.iterrows():
             email = file.read()
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
             connection.starttls()
-            connection.login(user="emailsenderday32@gmail.com", password="")
-            connection.sendmail(from_addr="emailsenderday32@gmail.com", to_addrs="emailsenderday32@yahoo.com",
+            connection.login(user="asm.notifier@gmail.com", password="qypnyz-curcu9-xeDdom")
+            connection.sendmail(from_addr="asm.notifier@gmail.com", to_addrs="emailsenderday32@yahoo.com",
                                 msg=f"Subject:Happy Birthday\n\n{email.replace('[NAME]', person.nameperson)}")
 
 

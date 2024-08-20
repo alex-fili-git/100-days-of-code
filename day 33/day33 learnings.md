@@ -24,3 +24,4 @@ Response code:
 5XX : the server screwed up 
 
 API Parameters ask for more specific information.   
+§
